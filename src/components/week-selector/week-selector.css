@@ -1,0 +1,28 @@
+.week-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #17F9DA;
+    width: 90%;
+}
+
+.week-selector .btn-left {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgba(23, 249, 218, 1);
+  border-left: 10px solid transparent;
+}
+
+.week-selector .btn-right {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid rgba(23, 249, 218, 1);
+}
