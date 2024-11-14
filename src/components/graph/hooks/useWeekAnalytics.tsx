@@ -31,9 +31,9 @@ const fetcher = async (startTimestamp: number, endTimestamp: number) => {
 
     const weekDates = generateWeekDates(startTimestamp);
 
-    return weekDates.reduce((acc, date) => {
-        acc[date] = aggregatedData[date] || 0; 
-        return acc;
+    return weekDates.reduce((acc: { [key: string]: number }, date: string) => {
+    acc[date] = aggregatedData[date] || 0;
+    return acc;
     }, {});
 
 };

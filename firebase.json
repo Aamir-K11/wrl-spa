@@ -1,6 +1,18 @@
 {
-    "hosting": {
-    "site": "aamir-wrl",
-    "public": "public"
-    }
+  "hosting": {
+    "site": "wrl-aamir",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "predeploy": ["npm run build"]
+  }
 }
