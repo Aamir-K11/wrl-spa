@@ -29,13 +29,17 @@ h1 {
 
 .row {
  display: flex;
- 
+ justify-content: center;
+ align-items: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  height: 26.5rem;
+  width: 75rem;
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {

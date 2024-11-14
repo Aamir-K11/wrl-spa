@@ -1,12 +1,13 @@
-import './App.css'
-import Graph from './components/graph/graph'
+import './App.css';
+import Home from './pages/home';
 
 function App() {
 
   return (
     <>
-      <Graph/>
+      <Home/>
     </>
+  
   )
 }
 

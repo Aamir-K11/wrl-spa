@@ -1,12 +1,11 @@
 .week-selector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     color: #17F9DA;
-    width: 90%;
 }
 
+.month {
+  color: #FFFFFF;
+}
 .week-selector .btn-left {
   background-color: transparent;
   width: 0;
