@@ -9,7 +9,7 @@ const Graph = ({currentWeek}: {currentWeek: number} ) => {
   const { data, isLoading} = useWeekAnalytics(calculateStartOfWeekTimestamp(currentWeek), calculateEndOfWeekTimestamp(currentWeek));
   return (
         <LineChart
-                xAxis={[{ data: Object.keys(data ? data: {}), tickSize: 0, scaleType: "point" }]}      
+                xAxis={[{ data: Object.keys(data ? data: {}), scaleType: "point" }]}      
                 series={[
                 {
                     curve: "linear",
@@ -18,11 +18,6 @@ const Graph = ({currentWeek}: {currentWeek: number} ) => {
                 },
                 ]}
                 margin = {{left: 100, right: 100}}
-                slotProps={
-                  {
-                    loadingOverlay: {message: "Loading"}
-                  }
-                }
                 sx={{
                 [`.${axisClasses.root}`]: {
                     [`.${axisClasses.line}`]: {
@@ -39,7 +34,6 @@ const Graph = ({currentWeek}: {currentWeek: number} ) => {
                     stroke: 'rgba(128, 128, 128, 0.2)', 
                     strokeWidth: 1.3
                 },
-                
                 }}
                 grid={{ vertical: true, horizontal: true }}
                 loading={isLoading}
