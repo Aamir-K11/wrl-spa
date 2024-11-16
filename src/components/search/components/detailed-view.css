@@ -1,0 +1,18 @@
+.table {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+}
+
+.table table td {
+    padding: 0.2rem 4rem;
+}
+
+.table table td {
+    border-bottom: 1px solid white;
+}
+
+.table table td:hover {
+    background: #3C1CFD;
+    opacity: 0.5;
+}

@@ -18,7 +18,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-height: 100vh;
+
 }
 
 h1 {
@@ -36,7 +36,7 @@ h1 {
 .column {
   display: flex;
   flex-direction: column;
-  height: 26.5rem;
+  height: 27.5rem;
   width: 75rem;
 }
 

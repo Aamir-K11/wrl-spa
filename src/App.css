@@ -8,6 +8,7 @@
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.54845428466797px);
   color: rgba(255, 255, 255, 1);
+  margin: 8rem 0;
 }
 
 .card .header {

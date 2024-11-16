@@ -1,0 +1,26 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0rem;
+    gap: 10px;
+}
+
+.search input {
+    padding: 0.5rem;
+    background: #FFFFFF;
+    width: 22%;
+    border-radius: 8px;
+    color:black;
+}
+
+.search button {
+    background: #3C1CFD;
+    color: #FFFFFF;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.search button:hover {
+    background: #110652;
+}

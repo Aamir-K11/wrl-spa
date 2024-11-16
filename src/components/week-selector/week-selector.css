@@ -1,27 +1,38 @@
 .week-selector {
-    gap: 10px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
     color: #17F9DA;
 }
 
-.month {
-  color: #FFFFFF;
-}
-.week-selector .btn-left {
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid rgba(23, 249, 218, 1);
-  border-left: 10px solid transparent;
+.week-selector > div {
+    display: flex; /* Align buttons and week number in a row */
+    gap: 10px; /* Space between buttons and week number */
+    align-items: center; /* Vertically align items */
+    flex-grow: 1; /* Make sure it takes all available space */
+    justify-content: center; /* Center the week number */
 }
 
-.week-selector .btn-right {
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-left: 10px solid rgba(23, 249, 218, 1);
+.btn-left, .btn-right {
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.btn-left {
+    border-right: 10px solid rgba(23, 249, 218, 1);
+    border-left: 10px solid transparent;
+}
+
+.btn-right {
+    border-left: 10px solid rgba(23, 249, 218, 1);
+    border-right: 10px solid transparent;
+}
+
+.month {
+    color: #FFFFFF;
+    padding-right: 2rem; 
 }

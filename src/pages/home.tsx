@@ -1,4 +1,5 @@
 import Graph from "../components/graph/graph";
+import Search from "../components/search/search";
 import Card from "../components/ui/card"
 import WeekSelector from "../components/week-selector/week-selector"
 import Error from "../error";
@@ -10,7 +11,8 @@ const Home = () => {
 
   
   return (
-    <Card header='Number of Contacts Per Day'>
+    <>
+      <Card header='Number of Contacts Per Day'>
         <div className='column'> 
             <WeekSelector currentWeek={currentWeek} currentMonth={currentMonth} toggleWeek={toggleWeek}/>
             <ErrorBoundary FallbackComponent={Error}>
@@ -18,6 +20,15 @@ const Home = () => {
             </ErrorBoundary>
         </div>
     </Card>
+    <Card header="Search">
+      <ErrorBoundary FallbackComponent={Error}>
+         <div className="column">
+          <Search/>
+        </div>
+      </ErrorBoundary>
+    </Card>
+    </>
+
   )
 }
 
